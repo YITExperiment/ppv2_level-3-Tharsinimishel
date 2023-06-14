@@ -9,6 +9,7 @@ def toggle_eyes( ):
     c.itemconfigure(eye_left, fill=new_color)
     c.itemconfigure(eye_right, fill=new_color)
 
+    
 def blink( ) :
     toggle_eyes()
     root.after (250,toggle_eyes)
